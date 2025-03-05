@@ -8,7 +8,7 @@ const WorkSpaceSharingOnAndOff = () => {
   // Function to copy link
   const handleCopy = () => {
     navigator.clipboard.writeText(link);
-    toast.success("Link to secret key copied!.");
+    toast.success("Link to secret key copied!");
   };
 
   return (
@@ -32,7 +32,6 @@ const WorkSpaceSharingOnAndOff = () => {
             type="text"
             value="/mylink.com"
             className="h-10 w-full rounded-[10px] text-xs font-normal bg-white px-3 placeholder:text-grey10 placeholder:font-normal placeholder:text-sm border-grey5 border"
-            placeholder="https://myapp.com/webhooks"
           />
           <button
             className="bg-white font-medium text-sm px-2.5 py-1.5 mt-2 rounded-lg shadow-sm cursor-pointer"

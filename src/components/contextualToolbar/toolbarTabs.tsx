@@ -42,7 +42,7 @@ const ToolbarTabs = () => {
       </AnimatePresence>
 
       <div className="pt-4 flex gap-2 items-center">
-        <div className="flex gap-2 items-center overflow-x-scroll w-[390px]">
+        <div className="flex gap-2 items-center overflow-x-scroll w-[390px] scrollbar-hide">
           {[
             "Create Webhook",
             "Connect Repositories",

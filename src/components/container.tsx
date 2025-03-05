@@ -1,8 +1,8 @@
 import { useState } from "react";
-import ContextualToolbar from "./contextualToolbar";
-import ToolbarTabs from "./toolbarTabs";
-import CalendarWidget from "./calendarWidget";
-import EngineeringSync from "./EngineeringSync";
+import ContextualToolbar from "./contextualToolbar/contextualToolbar";
+import ToolbarTabs from "./contextualToolbar/toolbarTabs";
+import CalendarWidget from "./calendarWidget/calendarWidget";
+import EngineeringSync from "./calendarWidget/EngineeringSync";
 
 const Container = () => {
   const [step, setStep] = useState(1);
@@ -16,7 +16,9 @@ const Container = () => {
   };
 
   return (
-    <article className="h-full flex gap-[342px]">
+    <article
+      className={`h-max flex ${step === 1 ? "gap-[342px]" : "gap-[220px]"}`}
+    >
       {step === 1 && (
         <>
           <CalendarWidget onNext={handleNext} />

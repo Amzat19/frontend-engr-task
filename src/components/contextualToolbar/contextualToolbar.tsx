@@ -6,7 +6,7 @@ const ContextualToolbar = ({ onPrevious }: ContextualToolbarProps) => {
   const languages = ["React", "Tailwind css", "Motion (prev. framer motion)"];
 
   return (
-    <div className="mt-[15%]">
+    <div className="mt-[10%]">
       <div>
         <h1 className="font-medium text-base mb-3 text-grey3">
           Contextual toolbar
@@ -29,7 +29,7 @@ const ContextualToolbar = ({ onPrevious }: ContextualToolbarProps) => {
         </div>
       </div>
       <span
-        className="px-2.5 py-1.5 border border-black1 text-black2 w-max rounded-lg font-medium text-sm mt-[35%] block"
+        className="px-2.5 py-1.5 border border-black1 text-black2 w-max rounded-lg font-medium text-sm mt-[25%] block cursor-pointer"
         onClick={onPrevious}
       >
         Previous task
