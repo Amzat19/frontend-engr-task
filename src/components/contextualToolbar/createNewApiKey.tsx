@@ -8,7 +8,7 @@ const CreateNewApiKey = () => {
       </p>
       <input
         type="text"
-        className="h-10 w-full rounded-[10px] bg-white px-3 placeholder:text-grey10 placeholder:font-normal placeholder:text-sm border-grey5 border mt-2"
+        className="h-10 w-full rounded-[10px] bg-white px-3 placeholder:text-grey10 placeholder:font-normal placeholder:text-sm border-grey5 border mt-2  focus:border-purple5 focus:ring-2 focus:ring-purple1 focus:outline-none"
         placeholder="API key name"
       />
       <div className=" flex gap-2 justify-end items-center mt-3">
